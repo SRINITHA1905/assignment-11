@@ -1,0 +1,58 @@
+//Code written on jan 5, 2021
+
+
+// by Beerelly Srinitha
+
+
+
+
+//This program implements a boolean function in C
+
+
+
+
+#include <stdio.h>
+
+
+
+//The  main function
+int main(void)
+
+
+
+{
+
+
+
+//2 bits = 1 baud
+
+//4 bits = 1 nibble
+
+//8 bits = 1 byte
+
+
+
+
+//unsigned char takes input as 1 byte
+
+
+
+unsigned char  CLK=1,A=0,B=0,Q=1;//inputs 	
+
+
+unsigned char Q_n;//output
+
+
+
+
+Q_n=(A&CLK)|Q;//Boolean function
+  
+
+
+
+printf(" %x\n",Q_n);
+//Output B
+
+return 1;
+
+}
